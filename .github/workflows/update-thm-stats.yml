@@ -1,0 +1,32 @@
+name: Update TryHackMe Stats
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch TryHackMe Stats
+        run: |
+          curl -s "https://tryhackme.com/api/v2/public-profile?username=Mistan" \
+            -H "User-Agent: Mozilla/5.0" \
+            -H "Accept: application/json" \
+            -o thm-stats.json
+          python3 -c "import json; d=json.load(open('thm-stats.json')); print('rank:', d['data']['rank'])"
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add thm-stats.json
+          git diff --staged --quiet || git commit -m "chore: update THM stats [skip ci]"
+          git push
