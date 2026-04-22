@@ -11,6 +11,17 @@
 
 ### 🌐 My Operations
 
+<div align="center">
+  <a href="https://mistan.dev">
+    <img src="https://image.thum.io/get/width/400/crop/600/noanimate/https://mistan.dev" width="48%" style="border-radius: 8px; border: 1px solid #333;" alt="mistan.dev screenshot" />
+  </a>
+  <a href="https://syscan.mistan.dev">
+    <img src="https://image.thum.io/get/width/400/crop/600/noanimate/https://syscan.mistan.dev" width="48%" style="border-radius: 8px; border: 1px solid #333;" alt="syscan.mistan.dev screenshot" />
+  </a>
+</div>
+
+<br/>
+
 *   **Primary Portfolio:** [mistan.dev](https://mistan.dev) - My interactive cyberfolio and professional hub.
 *   **SYSCAN Recon Engine:** [syscan.mistan.dev](https://syscan.mistan.dev) - An aggressive, zero-backend, client-side vulnerability scanner and OSINT tool.
 
