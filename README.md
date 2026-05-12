@@ -24,10 +24,14 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
   <img src="./assets/syscan-mistan-dev.png" width="49%" alt="syscan.mistan.dev" />
 </a>
 
+<div align="center">
+
 | Project | Description |
 |---|---|
 | **[mistan.dev](https://mistan.dev)** | Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration |
 | **[SYSCAN](https://syscan.mistan.dev)** | Zero-backend OSINT & vulnerability scanner with BGP fingerprinting, Shodan BYOK & XSS probing |
+
+</div>
 
 <br/>
 
