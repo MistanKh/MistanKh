@@ -70,13 +70,7 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
 
 ### GitHub Stats
 
-<div align="center">
-  <img src="https://github-readme-stats-eight.vercel.app/api?username=MistanKh&show_icons=true&hide_border=true&bg_color=0a0a0a&title_color=00ffd5&text_color=9f9f9f&icon_color=00ffd5&include_all_commits=true&hide_title=true" height="160" />
-  &nbsp;&nbsp;
-  <img src="https://github-readme-stats-eight.vercel.app/api/top-langs/?username=MistanKh&layout=compact&hide_border=true&bg_color=0a0a0a&title_color=00ffd5&text_color=9f9f9f&langs_count=6&hide_title=true" height="160" />
-</div>
 
-<br/>
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=MistanKh&bg_color=0a0a0a&color=00ffd5&line=00ffd5&point=ffffff&area=true&area_color=0a2030&hide_border=true" width="95%" />
