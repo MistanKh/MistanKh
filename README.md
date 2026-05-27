@@ -8,28 +8,23 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
 <br/>
 
 <a href="https://mistan.dev"><img src="https://img.shields.io/badge/🌐_mistan.dev-0a0a0f?style=for-the-badge&logoColor=00ffd5&labelColor=0a0a0f" /></a>&nbsp;&nbsp;
-<a href="https://syscan.mistan.dev"><img src="https://img.shields.io/badge/🛡️_syscan.mistan.dev-0a2030?style=for-the-badge&logoColor=00ffd5&labelColor=0a2030" /></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/mistan-khomdram-ab056315a"><img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 </div>
 
 <br/>
 
-### Featured Projects
-
-<a href="https://mistan.dev">
-  <img src="./assets/mistan-dev.png" width="49%" alt="mistan.dev" />
-</a>
-<a href="https://syscan.mistan.dev">
-  <img src="./assets/syscan-mistan-dev.png" width="49%" alt="syscan.mistan.dev" />
-</a>
+### Featured Project
 
 <div align="center">
+
+<a href="https://mistan.dev">
+  <img src="./assets/mistan-dev.png" width="80%" alt="mistan.dev" />
+</a>
 
 | Project | Description |
 |---|---|
 | **[mistan.dev](https://mistan.dev)** | Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration |
-| **[SYSCAN](https://syscan.mistan.dev)** | Zero-backend OSINT & vulnerability scanner with BGP fingerprinting, Shodan BYOK & XSS probing |
 
 </div>
 
