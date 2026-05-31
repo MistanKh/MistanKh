@@ -17,24 +17,44 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
 
 ### Featured Projects
 
+<table>
+<tr>
+<td width="50%" valign="top">
+
 <div align="center">
 
 <a href="https://mistan.dev">
-  <img src="./assets/mistan-dev.png" width="80%" alt="mistan.dev" />
+  <img src="./assets/mistan-dev.png" width="100%" alt="mistan.dev" />
 </a>
 
-<br/><br/>
+<br/>
 
-<a href="https://cyberpath.mistan.dev">
-  <img src="./assets/cyberpath-dev.png" width="80%" alt="cyberpath.mistan.dev" />
-</a>
+**[mistan.dev](https://mistan.dev)**
 
-| Project | Description |
-|---|---|
-| **[mistan.dev](https://mistan.dev)** | Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration |
-| **[cyberpath.mistan.dev](https://cyberpath.mistan.dev)** | Cybersecurity learning directory — Vite/React with roadmaps, domain paths, and curated resources |
+Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration
 
 </div>
+
+</td>
+<td width="50%" valign="top">
+
+<div align="center">
+
+<a href="https://cyberpath.mistan.dev">
+  <img src="./assets/cyberpath-dev.png" width="100%" alt="cyberpath.mistan.dev" />
+</a>
+
+<br/>
+
+**[cyberpath.mistan.dev](https://cyberpath.mistan.dev)**
+
+Cybersecurity learning directory — Vite/React with roadmaps, domain paths, and curated resources
+
+</div>
+
+</td>
+</tr>
+</table>
 
 <br/>
 
