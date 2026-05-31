@@ -23,6 +23,12 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
   <img src="./assets/mistan-dev.png" width="80%" alt="mistan.dev" />
 </a>
 
+<br/><br/>
+
+<a href="https://cyberpath.mistan.dev">
+  <img src="./assets/cyberpath-dev.png" width="80%" alt="cyberpath.mistan.dev" />
+</a>
+
 | Project | Description |
 |---|---|
 | **[mistan.dev](https://mistan.dev)** | Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration |
