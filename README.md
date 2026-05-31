@@ -8,13 +8,14 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
 <br/>
 
 <a href="https://mistan.dev"><img src="https://img.shields.io/badge/🌐_mistan.dev-0a0a0f?style=for-the-badge&logoColor=00ffd5&labelColor=0a0a0f" /></a>&nbsp;&nbsp;
+<a href="https://cyberpath.mistan.dev"><img src="https://img.shields.io/badge/🗺️_cyberpath.mistan.dev-0a0a0f?style=for-the-badge&logoColor=00ffd5&labelColor=0a0a0f" /></a>&nbsp;&nbsp;
 <a href="https://www.linkedin.com/in/mistan-khomdram-ab056315a"><img src="https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 </div>
 
 <br/>
 
-### Featured Project
+### Featured Projects
 
 <div align="center">
 
@@ -25,6 +26,7 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
 | Project | Description |
 |---|---|
 | **[mistan.dev](https://mistan.dev)** | Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration |
+| **[cyberpath.mistan.dev](https://cyberpath.mistan.dev)** | Cybersecurity learning directory — Vite/React with roadmaps, domain paths, and curated resources |
 
 </div>
 
