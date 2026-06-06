@@ -2,7 +2,7 @@ name: Update TryHackMe Stats
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '17 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,18 +18,37 @@ jobs:
       - name: Fetch TryHackMe Stats
         id: fetch
         run: |
-          HTTP_STATUS=$(curl -s -o thm-stats.json -w "%{http_code}" \
+          HTTP_STATUS=$(curl -sS -o thm-stats.tmp.json -w "%{http_code}" \
             "https://tryhackme.com/api/v2/public-profile?username=Mistan" \
             -H "User-Agent: Mozilla/5.0" \
             -H "Accept: application/json" \
             --max-time 20)
-          if [ "$HTTP_STATUS" != "200" ]; then
-            echo "THM API returned HTTP $HTTP_STATUS — aborting to avoid overwriting good data"
-            exit 1
+
+          if [ "$HTTP_STATUS" = "429" ]; then
+            echo "THM API returned HTTP 429 rate limit. Keeping existing stats and ending successfully."
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
-          python3 -c "import json; d=json.load(open('thm-stats.json')); print('rank:', d['data']['rank'])"
+
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "THM API returned HTTP $HTTP_STATUS. Keeping existing stats and ending successfully."
+            echo "updated=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          data = json.loads(Path("thm-stats.tmp.json").read_text())
+          rank = data["data"]["rank"]
+          print("rank:", rank)
+          Path("thm-stats.json").write_text(json.dumps(data, separators=(",", ":")) + "\n")
+          PY
+          echo "updated=true" >> "$GITHUB_OUTPUT"
 
       - name: Commit & Push
+        if: steps.fetch.outputs.updated == 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
