@@ -31,7 +31,7 @@ threat intelligence, and custom security tooling. CEH | Security+ | eJPT.
 
 **[mistan.dev](https://mistan.dev)**
 
-Terminal-themed cyberfolio — Astro, GSAP & Lenis with live GitHub integration
+Terminal-themed cyberfolio — hand-coded HTML/CSS/JS with security writeups & project case studies
 
 </div>
 
