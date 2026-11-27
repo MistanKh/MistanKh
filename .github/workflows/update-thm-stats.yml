@@ -5,6 +5,10 @@ on:
     - cron: '17 3 * * *'
   workflow_dispatch:
 
+# Default token is read-only. The job below opts into write only because it pushes.
+permissions:
+  contents: read
+
 jobs:
   update-stats:
     runs-on: ubuntu-latest
@@ -13,7 +17,11 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+        with:
+          # The commit step rebases and pushes with `git pull` / `git push`.
+          # Checkout must persist the job token (scoped to contents: write) for that to work.
+          persist-credentials: true
 
       - name: Fetch TryHackMe Stats
         id: fetch
